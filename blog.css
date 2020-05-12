@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7f8;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+.head {
+    padding: 0px !important;
+}
+
+.navbar {
+    color: black;
+    background: tomato;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    margin: .5rem;
+}
+
+#a_btitle {
+    text-decoration: none;
+    color: #00000094;
+    font-family: cursive;
+}
+
+#a_btitle:hover {
+    color: rgba(0, 0, 255, 0.664);
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #493131e0;
+    font-family: cursive;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: rgba(248, 248, 15, 0.753);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 661px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-family: serif;
+    color: tomato;
+}
+
+.blog-card {
+    border: 1px solid #cfcbcb;
+}
+
+.blog_text {
+    background-color: white;
+}
+
+.blog_thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bt_title {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #2e2c2cd4;
+}
+
+.bt_date {
+    font-size: 15px;
+    color: #766c68;
+}
+
+a:hover {
+    text-decoration: none;
+}
